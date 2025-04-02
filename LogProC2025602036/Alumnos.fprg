@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Alumnos"/>
+        <attribute name="authors" value="herli"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-01 09:16:19 p. m."/>
+        <attribute name="created" value="aGVybGk7Q0xBVURJQTsyMDI1LTA0LTAxOzA4OjM0OjU2IHAuIG0uOzI1MDM="/>
+        <attribute name="edited" value="aGVybGk7Q0xBVURJQTsyMDI1LTA0LTAxOzA5OjE2OjE5IHAuIG0uOzI7MjYxMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <assign variable="x" expression="0"/>
+            <declare name="G&#233;nero" type="Integer" array="False" size=""/>
+            <declare name="inicialNombre" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingrese su g&#233;nero (F/M):&quot;" newline="False"/>
+            <input variable="&quot;G&#233;nero&quot;"/>
+            <if expression="(g&#233;nero= F AND inicial &lt; M)OR (g&#233;nero= M AND inicial &gt; N)">
+                <then>
+                    <output expression="&quot;Pertenece al grupo A&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Pertenece al grupo B&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
