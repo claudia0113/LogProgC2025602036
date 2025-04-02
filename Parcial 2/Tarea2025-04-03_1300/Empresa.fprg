@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Empresa"/>
+        <attribute name="authors" value="herli"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-01 10:17:25 p. m."/>
+        <attribute name="created" value="aGVybGk7Q0xBVURJQTsyMDI1LTA0LTAxOzA5OjA1OjU2IHAuIG0uOzI1MDI="/>
+        <attribute name="edited" value="aGVybGk7Q0xBVURJQTsyMDI1LTA0LTAxOzEwOjE3OjI1IHAuIG0uOzI7MjYwMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <input variable="&quot;edad Ingrese la edad del cliente:&quot;"/>
+            <if expression="edad&lt;4">
+                <then/>
+                <else>
+                    <output expression="&quot;La entrada es gratis&quot;" newline="True"/>
+                    <if expression="edad&lt;18">
+                        <then>
+                            <output expression="&quot;El precio de la entrada es $500&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;El precio de la entrada es $200&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
