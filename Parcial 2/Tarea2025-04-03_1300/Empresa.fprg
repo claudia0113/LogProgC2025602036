@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Empresa"/>
+        <attribute name="authors" value="herli"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-02 05:47:20 p. m."/>
+        <attribute name="created" value="aGVybGk7Q0xBVURJQTsyMDI1LTA0LTAyOzA1OjQyOjAyIHAuIG0uOzI0OTE="/>
+        <attribute name="edited" value="aGVybGk7Q0xBVURJQTsyMDI1LTA0LTAyOzA1OjQ3OjIwIHAuIG0uOzE7MjYwNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Edad" type="Integer" array="False" size=""/>
+            <assign variable="Edad" expression="0"/>
+            <output expression="&quot;&#191;Cu&#225;ntos a&#241;os tiene?&quot;" newline="True"/>
+            <input variable="Edad"/>
+            <if expression="Edad&lt;4">
+                <then>
+                    <output expression="&quot;Gratis&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="Edad&lt;=18">
+                        <then>
+                            <output expression="&quot;200 pesos&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="Edad&gt;18">
+                                <then>
+                                    <output expression="&quot;500 pesos&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
