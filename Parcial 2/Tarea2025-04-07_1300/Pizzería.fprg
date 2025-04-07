@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Pizzer&#237;a"/>
+        <attribute name="authors" value="herli"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-06 06:52:54 p. m."/>
+        <attribute name="created" value="aGVybGk7Q0xBVURJQTsyMDI1LTA0LTA2OzA2OjIzOjE1IHAuIG0uOzI0OTk="/>
+        <attribute name="edited" value="aGVybGk7Q0xBVURJQTsyMDI1LTA0LTA2OzA2OjUyOjU0IHAuIG0uOzE7MjYxMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tipo" type="String" array="False" size=""/>
+            <declare name="ingrediente" type="String" array="False" size=""/>
+            <declare name="pizza" type="String" array="False" size=""/>
+            <output expression="&quot;&#191;Quieres pizza vegetariana? (si/no):&quot;" newline="True"/>
+            <input variable="tipo"/>
+            <if expression="tipo==&quot;si/no&quot;">
+                <then>
+                    <output expression="&quot;Ingredientes: Pimineto o tofu&quot;" newline="True"/>
+                    <input variable="Elige"/>
+                    <input variable="ingrediente"/>
+                    <assign variable="pizza" expression="&quot;Pizza vegetariana con mozzarella, tomate y &quot; + ingrediente"/>
+                </then>
+                <else>
+                    <output expression="&quot;Ingredientes: Peperoni, jam&#243;n o salm&#243;n&quot;" newline="True"/>
+                    <input variable="Elige"/>
+                    <input variable="ingrediente"/>
+                    <assign variable="pizza" expression="&quot;Pizza no vegetariana con mozarella, tomate y&quot; + ingrediente"/>
+                </else>
+            </if>
+            <output expression="&quot;Pizza&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
