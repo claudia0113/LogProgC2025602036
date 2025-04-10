@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Ejercicio 1"/>
+        <attribute name="authors" value="herli"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 09:46:22 p. m."/>
+        <attribute name="created" value="aGVybGk7Q0xBVURJQTsyMDI1LTA0LTA4OzA5OjM4OjUyIHAuIG0uOzI1MTE="/>
+        <attribute name="edited" value="aGVybGk7Q0xBVURJQTsyMDI1LTA0LTA4OzA5OjQ2OjIyIHAuIG0uOzE7MjYxNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="1"/>
+            <assign variable="b" expression="1"/>
+            <output expression="&quot;Escribe el n&#250;mero&quot;" newline="True"/>
+            <input variable="a"/>
+            <while expression="c&lt;=a">
+                <assign variable="b" expression="b*1"/>
+                <assign variable="c" expression="c+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
