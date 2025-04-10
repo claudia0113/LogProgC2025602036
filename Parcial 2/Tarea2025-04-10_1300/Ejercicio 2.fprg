@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Ejercicio 2"/>
+        <attribute name="authors" value="herli"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-09 09:05:29 p. m."/>
+        <attribute name="created" value="aGVybGk7Q0xBVURJQTsyMDI1LTA0LTA4OzA5OjQ5OjEyIHAuIG0uOzI1MDk="/>
+        <attribute name="edited" value="aGVybGk7Q0xBVURJQTsyMDI1LTA0LTA5OzA5OjA1OjI5IHAuIG0uOzI7MjYxOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="0"/>
+            <assign variable="b" expression="1"/>
+            <assign variable="i" expression="2"/>
+            <output expression="&quot;Mostar a&quot;" newline="True"/>
+            <output expression="&quot;Mostrar b&quot;" newline="True"/>
+            <while expression="i&lt;64">
+                <assign variable="c" expression="a+b"/>
+                <assign variable="a" expression="b"/>
+                <assign variable="b" expression="c"/>
+                <assign variable="i" expression="i+1"/>
+                <output expression="i" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
